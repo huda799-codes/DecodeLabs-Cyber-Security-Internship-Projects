@@ -1,13 +1,82 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.ArrayList;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+
+public class Main {
+
+
+    public static void main(String[] args){
+
+
+        System.out.println(
+                "SYSTEM VULNERABILITY CHECKLIST"
+        );
+
+
+        ArrayList<Vulnerability> findings =
+                new ArrayList<>();
+
+
+        SystemScanner system =
+                new SystemScanner();
+
+
+        UserScanner users =
+                new UserScanner();
+
+
+        FirewallScanner firewall =
+                new FirewallScanner();
+
+
+        UpdateScanner updates =
+                new UpdateScanner();
+
+
+        EncryptionScanner encryption =
+                new EncryptionScanner();
+
+
+
+        findings.addAll(
+                system.scanSystem()
+        );
+
+
+        findings.addAll(
+                users.checkUsers()
+        );
+
+
+        findings.addAll(
+                firewall.checkFirewall()
+        );
+
+
+        findings.addAll(
+                updates.checkUpdates()
+        );
+
+
+        findings.addAll(
+                encryption.checkEncryption()
+        );
+
+
+
+        ReportGenerator report =
+                new ReportGenerator();
+
+
+        report.generate(
+                findings
+        );
+
+
+        System.out.println(
+                "Security Audit Completed"
+        );
+
+
     }
+
 }
