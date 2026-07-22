@@ -10,6 +10,9 @@ public class GUI {
     JTextArea output;
 
 
+    JLabel status;
+
+
     public GUI(){
 
 
@@ -18,11 +21,7 @@ public class GUI {
         );
 
 
-        frame.setSize(
-                800,
-                600
-        );
-
+        frame.setSize(900,650);
 
         frame.setDefaultCloseOperation(
                 JFrame.EXIT_ON_CLOSE
@@ -34,45 +33,52 @@ public class GUI {
         );
 
 
-        // Title
 
-        JLabel title =
+        // HEADER
+
+        JLabel header =
                 new JLabel(
-                        "SYSTEM VULNERABILITY ASSESSMENT TOOL",
+                        "🛡 CYBER SECURITY VULNERABILITY SCANNER",
                         SwingConstants.CENTER
                 );
 
 
-        title.setFont(
+        header.setFont(
                 new Font(
                         "Arial",
                         Font.BOLD,
-                        22
+                        25
                 )
         );
 
 
-        title.setForeground(
+        header.setForeground(
                 Color.WHITE
         );
 
 
-        title.setBackground(
-                Color.BLACK
+        header.setBackground(
+                new Color(20,30,50)
         );
 
 
-        title.setOpaque(true);
+        header.setOpaque(true);
+
+
+        header.setPreferredSize(
+                new Dimension(900,70)
+        );
 
 
         frame.add(
-                title,
+                header,
                 BorderLayout.NORTH
         );
 
 
 
-        // Output Area
+        // CENTER PANEL
+
 
         output =
                 new JTextArea();
@@ -80,22 +86,30 @@ public class GUI {
 
         output.setFont(
                 new Font(
-                        "Monospaced",
+                        "Consolas",
                         Font.PLAIN,
-                        14
+                        15
                 )
         );
 
 
-        output.setEditable(
-                false
+        output.setBackground(
+                new Color(245,245,245)
         );
 
 
+        output.setMargin(
+                new Insets(15,15,15,15)
+        );
+
+
+        output.setEditable(false);
+
+
+
         JScrollPane scroll =
-                new JScrollPane(
-                        output
-                );
+                new JScrollPane(output);
+
 
 
         frame.add(
@@ -105,15 +119,28 @@ public class GUI {
 
 
 
-        // Button
+        // FOOTER PANEL
 
-        JButton scanButton =
+
+        JPanel bottom =
+                new JPanel();
+
+
+
+        bottom.setLayout(
+                new FlowLayout()
+        );
+
+
+
+        JButton scan =
                 new JButton(
                         "START SECURITY AUDIT"
                 );
 
 
-        scanButton.setFont(
+
+        scan.setFont(
                 new Font(
                         "Arial",
                         Font.BOLD,
@@ -123,12 +150,27 @@ public class GUI {
 
 
 
-        scanButton.addActionListener(e -> runAudit());
+        status =
+                new JLabel(
+                        "Status: Ready"
+                );
+
+
+
+        scan.addActionListener(
+                e -> runAudit()
+        );
+
+
+
+        bottom.add(status);
+
+        bottom.add(scan);
 
 
 
         frame.add(
-                scanButton,
+                bottom,
                 BorderLayout.SOUTH
         );
 
@@ -136,20 +178,21 @@ public class GUI {
 
         frame.setVisible(true);
 
-
     }
 
 
 
 
 
-    private void runAudit(){
+
+
+    void runAudit(){
 
 
         output.setText("");
 
-        output.append(
-                "Starting Security Audit...\n\n"
+        status.setText(
+                "Status: Scanning..."
         );
 
 
@@ -158,40 +201,31 @@ public class GUI {
                 new ArrayList<>();
 
 
-        UserScanner users =
-                new UserScanner();
-
-
-        FirewallScanner firewall =
-                new FirewallScanner();
-
-
-        UpdateScanner updates =
-                new UpdateScanner();
-
-
-        EncryptionScanner encryption =
-                new EncryptionScanner();
-
-
 
         findings.addAll(
-                users.checkUsers()
+                new UserScanner()
+                        .checkUsers()
         );
 
 
+
         findings.addAll(
-                firewall.checkFirewall()
+                new FirewallScanner()
+                        .checkFirewall()
         );
 
 
+
         findings.addAll(
-                updates.checkUpdates()
+                new UpdateScanner()
+                        .checkUpdates()
         );
 
 
+
         findings.addAll(
-                encryption.checkEncryption()
+                new EncryptionScanner()
+                        .checkEncryption()
         );
 
 
@@ -210,21 +244,19 @@ public class GUI {
 
 
 
-        ReportGenerator report =
-                new ReportGenerator();
+        new ReportGenerator()
+                .generate(findings);
 
 
-        report.generate(
-                findings
+
+        status.setText(
+                "Status: Audit Completed ✔"
         );
 
-
-        output.append(
-                "\n\nREPORT GENERATED SUCCESSFULLY"
-        );
 
 
     }
+
 
 
 
@@ -232,11 +264,8 @@ public class GUI {
 
     public static void main(String[] args){
 
-
         new GUI();
 
-
     }
-
 
 }
