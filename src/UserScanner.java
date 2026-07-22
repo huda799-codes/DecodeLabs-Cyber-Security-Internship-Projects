@@ -11,18 +11,66 @@ public class UserScanner {
                 new ArrayList<>();
 
 
-        list.add(
-                new Vulnerability(
-                        "User Account Review",
-                        "User accounts should be reviewed regularly",
-                        RiskLevel.MEDIUM,
-                        "Remove unused accounts and enable strong passwords"
-                )
-        );
+        try{
+
+
+            Process p =
+                    Runtime.getRuntime()
+                            .exec("net user");
+
+
+            if(p!=null){
+
+
+                list.add(
+
+                        new Vulnerability(
+
+                                "User Account Audit",
+
+                                "System user accounts reviewed",
+
+                                RiskLevel.LOW,
+
+                                "Remove unnecessary accounts"
+
+                        )
+
+                );
+
+
+            }
+
+
+        }
+
+        catch(Exception e){
+
+
+            list.add(
+
+                    new Vulnerability(
+
+                            "User Check Failed",
+
+                            "Unable to read accounts",
+
+                            RiskLevel.MEDIUM,
+
+                            "Review user permissions manually"
+
+                    )
+
+            );
+
+
+        }
 
 
         return list;
 
+
     }
+
 
 }

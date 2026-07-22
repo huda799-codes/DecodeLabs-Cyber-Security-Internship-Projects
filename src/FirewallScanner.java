@@ -11,33 +11,66 @@ public class FirewallScanner {
                 new ArrayList<>();
 
 
-        String os =
-                System.getProperty("os.name");
+        try{
 
 
-        System.out.println(
-                "Checking Firewall..."
-        );
+            Process p =
+                    Runtime.getRuntime()
+                            .exec(
+                                    "netsh advfirewall show allprofiles"
+                            );
 
 
-        if(os.contains("Windows")){
+
+            if(p.waitFor()==0){
+
+
+                list.add(
+                        new Vulnerability(
+
+                                "Firewall Check",
+
+                                "Firewall configuration verified",
+
+                                RiskLevel.LOW,
+
+                                "Keep firewall enabled"
+
+                        ));
+
+
+            }
+
+
+
+        }
+
+        catch(Exception e){
 
 
             list.add(
-                    new Vulnerability(
-                            "Firewall Verification",
-                            "Windows firewall status should be checked",
-                            RiskLevel.HIGH,
-                            "Enable firewall protection"
-                    )
-            );
 
+                    new Vulnerability(
+
+                            "Firewall Disabled",
+
+                            "Firewall status cannot be verified",
+
+                            RiskLevel.CRITICAL,
+
+                            "Enable firewall immediately"
+
+                    )
+
+            );
 
         }
 
 
         return list;
 
+
     }
+
 
 }

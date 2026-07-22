@@ -2,35 +2,40 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 
 
+
 public class ReportGenerator {
 
 
 
     public void generate(
-            ArrayList<Vulnerability> vulnerabilities
+            ArrayList<Vulnerability> list
     ){
 
 
         try{
 
 
-            FileWriter writer =
+            FileWriter file =
                     new FileWriter(
                             "Vulnerability_Report.txt"
                     );
 
 
-            writer.write(
-                    "SYSTEM VULNERABILITY REPORT\n\n"
+
+            file.write(
+                    "SYSTEM VULNERABILITY ASSESSMENT REPORT\n"
+            );
+
+            file.write(
+                    "=====================================\n\n"
             );
 
 
-            for(
-                    Vulnerability v : vulnerabilities
-            ){
+
+            for(Vulnerability v:list){
 
 
-                writer.write(
+                file.write(
                         v.toString()
                 );
 
@@ -38,29 +43,31 @@ public class ReportGenerator {
             }
 
 
-            writer.close();
+
+            file.close();
 
 
             System.out.println(
-                    "Report Generated Successfully"
+                    "Report Created"
             );
 
 
         }
-
 
         catch(Exception e){
 
 
             System.out.println(
-                    "Report Error"
+                    "Error Creating Report"
             );
 
 
         }
 
 
+
     }
+
 
 
 }
