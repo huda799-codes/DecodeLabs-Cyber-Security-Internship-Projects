@@ -38,7 +38,7 @@ public class GUI {
 
         JLabel header =
                 new JLabel(
-                        "🛡 CYBER SECURITY VULNERABILITY SCANNER",
+                        "CYBER SECURITY VULNERABILITY SCANNER",
                         SwingConstants.CENTER
                 );
 
