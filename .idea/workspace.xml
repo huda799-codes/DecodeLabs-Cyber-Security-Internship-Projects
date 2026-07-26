@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="628299fd-de52-4ed9-bbb6-6fe0b454cb8e" name="Changes" comment="improving program design">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decodelab projects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemVulnerabilityChecklist.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-01-password-strength-checker/PasswordStrengthCheckerGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-02-basic-encryption-decryption/CaesarCipher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-03-phishing-awareness-analysis/PhishingAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-03-phishing-awareness-analysis/src/PhishingAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/Vulnerability_Report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/CVSSCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/EncryptionScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/FirewallScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/GUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/ReportGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/RiskLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/SystemScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/UpdateScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/UserScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-04-system-vulnerability-checklist/src/Vulnerability.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Vulnerability_Report.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;huda799-codes&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/huda799-codes/DecodeLabs-Cyber-Security-Internship-Projects.git&quot;,
+    &quot;accountId&quot;: &quot;80a247d4-d815-4bed-99b2-c4e9f3e30a5e&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3Gr7ZvlJDFKDBELHGUVjd1Adwur" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GUI.executor": "Run",
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/DELL/DecodeLabs Internship/SystemVulnerabilityChecklist",
+    "onboarding.tips.debug.path": "C:/Users/DELL/DecodeLabs Internship/SystemVulnerabilityChecklist/SystemVulnerabilityChecklist/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\DecodeLabs Internship\SystemVulnerabilityChecklist\project-03-phishing-awareness-analysis\src" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="628299fd-de52-4ed9-bbb6-6fe0b454cb8e" name="Changes" comment="" />
+      <created>1784717897288</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784717897288</updated>
+    </task>
+    <task id="LOCAL-00001" summary="defining structure of program">
+      <option name="closed" value="true" />
+      <created>1784718202476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784718202476</updated>
+    </task>
+    <task id="LOCAL-00002" summary="defining structure of program">
+      <option name="closed" value="true" />
+      <created>1784718216947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784718216947</updated>
+    </task>
+    <task id="LOCAL-00003" summary="defining structure of program">
+      <option name="closed" value="true" />
+      <created>1784718241785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1784718241785</updated>
+    </task>
+    <task id="LOCAL-00004" summary="defining structure of program">
+      <option name="closed" value="true" />
+      <created>1784718932080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1784718932080</updated>
+    </task>
+    <task id="LOCAL-00005" summary="defining structure of program">
+      <option name="closed" value="true" />
+      <created>1784719035689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1784719035689</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Writing code in each class">
+      <option name="closed" value="true" />
+      <created>1784719081956</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1784719081956</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Writing code in each class">
+      <option name="closed" value="true" />
+      <created>1784719434955</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1784719434955</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Writing code in each class">
+      <option name="closed" value="true" />
+      <created>1784719548104</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1784719548104</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Writing code in each class">
+      <option name="closed" value="true" />
+      <created>1784719606360</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1784719606360</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adding changes">
+      <option name="closed" value="true" />
+      <created>1784719732885</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1784719732885</updated>
+    </task>
+    <task id="LOCAL-00011" summary="improving program structure">
+      <option name="closed" value="true" />
+      <created>1784720050301</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1784720050301</updated>
+    </task>
+    <task id="LOCAL-00012" summary="improving program structure">
+      <option name="closed" value="true" />
+      <created>1784720238923</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1784720238923</updated>
+    </task>
+    <task id="LOCAL-00013" summary="improving program structure">
+      <option name="closed" value="true" />
+      <created>1784720478613</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1784720478613</updated>
+    </task>
+    <task id="LOCAL-00014" summary="improving program design">
+      <option name="closed" value="true" />
+      <created>1784720633793</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1784720633793</updated>
+    </task>
+    <task id="LOCAL-00015" summary="improving program design">
+      <option name="closed" value="true" />
+      <created>1785048800034</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1785048800034</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="defining structure of program" />
+    <MESSAGE value="Writing code in each class" />
+    <MESSAGE value="adding changes" />
+    <MESSAGE value="improving program structure" />
+    <MESSAGE value="improving program design" />
+    <option name="LAST_COMMIT_MESSAGE" value="improving program design" />
+  </component>
+</project>
