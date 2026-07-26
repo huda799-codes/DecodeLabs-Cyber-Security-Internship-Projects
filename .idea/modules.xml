@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/SystemVulnerabilityChecklist.iml" filepath="$PROJECT_DIR$/SystemVulnerabilityChecklist.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/Decodelab projects.iml" filepath="$PROJECT_DIR$/Decodelab projects.iml" />
->>>>>>> 745ff0e8f0f32db6aacadbb2d458f3136833532c
+      <module fileurl="file://$PROJECT_DIR$/SystemVulnerabilityChecklist/SystemVulnerabilityChecklist.iml" filepath="$PROJECT_DIR$/SystemVulnerabilityChecklist/SystemVulnerabilityChecklist.iml" />
     </modules>
   </component>
 </project>
